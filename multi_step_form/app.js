@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Display success message
         alert('Submission successful!');
         // Redirect to main page
-        window.location.href = 'https://hamdellou-oussama.github.io/compact2024/index.html?success=true';
+        window.location.href = 'https://hamdellou-oussama.github.io/compact2024/index.html';
       } catch (error) {
         console.error('Error inserting data: ', error);
         alert('Failed to submit form!');
