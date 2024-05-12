@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_f.css" />
+    <script src="script_f.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Registration Form</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title="Team info"
+        ></div>
+        <div class="progress-step" data-title="Student info"></div>
+        <div class="progress-step" data-title="Contact"></div>
+        <div class="progress-step" data-title="Previous Exp"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="teamname">Team Name</label>
+          <input type="text" name="" id="teamname" placeholder="Enter your team name" required/>
+        </div>
+        <div class="input-group">
+          <label for="Team_Leader">Team Leader</label>
+          <input type="text" name="Team_Leader" id="Team_Leader" placeholder="First & Last Name" required/>
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="student">Student Name</label>
+          <input type="text" name="student" id="student" placeholder="First & Last Name" required/>
+        </div>
+        <div class="input-group">
+          <label for="school">School Name</label>
+          <input type="text" name="school" id="school" placeholder="Enter your School name " required/>
+        </div>
+        <div class="input-group">
+          <label for="grade">Your grade</label>
+          <input type="text" name="grade" id="grade" placeholder="Enter your univ level" required/>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="Enter your scholar email" required/>
+        </div>
+        <div class="input-group">
+          <label for="number">Phone Number</label>
+          <input type="text" name="number" id="number" placeholder="Enter your phone number" required/>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="info">Tell us what you know about optimazation and data treatment:</label>
+          <textarea class="text" id="info" name="info" rows="6" placeholder="......"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="exp">Have you ever participated in a hackathon? Tell us about your experience:</label>
+          <textarea class="text" id="exp" name="exp" rows="6" placeholder="......"></textarea>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="button" value="Submit" class="btn" id="psps"/>
+        </div>
+      </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
